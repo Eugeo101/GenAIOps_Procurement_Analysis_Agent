@@ -14,7 +14,7 @@ load_dotenv(BASE_DIR / "secrets.env")
 with open(BASE_DIR / "config.yaml", 'r') as file:
     config_data = yaml.safe_load(file)
 
-with open(BASE_DIR / "prompts" / "system_instruction_v3.txt") as fd:
+with open(BASE_DIR / "prompts" / "v4_optimized_concise.txt") as fd:
     system_instruction = fd.read().strip()
 
 if __name__ == '__main__':
